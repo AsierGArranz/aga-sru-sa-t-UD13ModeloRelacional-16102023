@@ -1,0 +1,1 @@
+ATLETA: nºDorsal# : int[pk] , nombre, ..., nºDorsal#_rol2 : int[nn,fk,uk]
