@@ -1,0 +1,6 @@
+Socios: num_socio:String(PK), nombre, apellidos, telefono, fecha_cad, sancion
+Libro: Signatura:String(PK), disponible
+Prestamo: num_prestamo:int(PK), fecha_prest, num_socio:String(FK), Signatura:String(FK)
+Prestamos_s: num_prestamo:int(PK)
+Prestamos_e: num_prestamo:int(PK), fecha_devol
+Fondo: Titulo:String(PK), autor(PK), cantidad, Signatura:String(FK)
