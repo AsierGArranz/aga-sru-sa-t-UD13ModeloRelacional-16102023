@@ -1,0 +1,7 @@
+Elemento: nombre_elem(PK), peso_atomico, simbolo, natomico
+Elemento: nombre_elem(PK), peso_atomico, simbolo, natomico
+Compuesto: nombre_comp(PK)
+Compuesto_por: nombre_elem(PK,FK),nombre_comp(PK,FK), proporcion
+Gaseoso: nombre_comp(PK,FK), coef_expun, temp_lic
+Liquido: nombre_comp(PK,FK), densidad, temp_evap
+Solido: nombre_comp(PK,FK), color, olor, dureza
