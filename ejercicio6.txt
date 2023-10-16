@@ -1,0 +1,4 @@
+Cliente: cod_cliente:int(PK)...
+Producto: cod_producto:int(PK), cantidad, cod_proveedor:int(FK), unidades, fecha_entrega
+Pedido: cod_pedido:int(PK), fecha_pedido, cod_cliente:int(FK), cod_producto:int(FK), num_unidades
+Proveedor: cod_proveedor:int(PK)
