@@ -1,0 +1,4 @@
+Arrendatario: cif/nif : String (PK), nombre_fiscal, nombre_firante, cargo_firamnte, direccion, codigo_postal, localidad, provincia, telefono_fijo, telefono_movil, fax, actividad
+Nave: codigo_nave : String(PK), poligono, calle, numero, localidad, codigo_postal, provincia, telefono, caracteristicas, foto, datos_escrituras, alquilada, gastos_comunidad
+Alquila: cif/nif : String (PK), codigo_nave : String (PK, FK), numero_de_cuenta, dias_de_pago, fecha_alguiler, importe_alquiler
+Recibo: numero_recibo : int(PK), importe_total, importe_IVA, pagado, fecha, cif/nif : String (FK)
