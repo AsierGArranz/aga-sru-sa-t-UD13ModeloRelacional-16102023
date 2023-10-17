@@ -1,7 +1,7 @@
-Elemento: nombre_elem:String(PK), peso_atomico, simbolo, natomico
-Elemento: nombre_elem:String(PK), peso_atomico, simbolo, natomico
+Elemento: nombre_elem:String(PK), peso_atomico:double, simbolo:String, n_atomico:int
+Elemento: nombre_elem:String(PK), peso_atomico:double, simbolo:String, n_atomico:int
 Compuesto: nombre_comp:String(PK)
-Compuesto_por: nombre_elem:String(PK,FK),nombre_comp:String(PK,FK), proporcion
-Gaseoso: nombre_comp:String(PK,FK), coef_expun, temp_lic
-Liquido: nombre_comp:String(PK,FK), densidad, temp_evap
-Solido: nombre_comp:String(PK,FK), color, olor, dureza
+Compuesto_por: nombre_elem:String(PK,FK),nombre_comp:String(PK,FK), proporcion:double
+Gaseoso: nombre_comp:String(PK,FK), coef_expun:int, temp_lic:double
+Liquido: nombre_comp:String(PK,FK), densidad:double, temp_evap:double
+Solido: nombre_comp:String(PK,FK), color:String, olor:String, dureza:double
