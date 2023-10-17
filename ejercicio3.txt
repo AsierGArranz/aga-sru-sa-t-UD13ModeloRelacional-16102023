@@ -1,5 +1,5 @@
-Cliente: dni:String(PK), nombre, apellido, direccion, ciudad
-Sucursal: num_sucursal:int(PK), ciudad,  activo
-Cuenta: num_cuenta:int(PK), saldo
+Cliente: dni:String(PK), nombre:String, apellido:String, direccion:String, ciudad:String
+Sucursal: num_sucursal:int(PK), ciudad:String, activo:boolean
+Cuenta: num_cuenta:int(PK), saldo:double
 Abrir: dni:String(PK), num_sucursal:int(PK), num_cuenta:int(PK)
-Transaccion: num_transaccion:int(PK), num_cuenta:int(FK), fecha, tipoOperacion, cantidad
+Transaccion: num_transaccion:int(PK), num_cuenta:int(FK), fecha:int, tipoOperacion:String, cantidad:double
