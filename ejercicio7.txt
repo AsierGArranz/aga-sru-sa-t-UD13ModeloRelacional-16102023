@@ -1,0 +1,4 @@
+Arrendatario: cif/nif : String (PK), nombre_fiscal:String, nombre_firante:String, cargo_firamnte:String, direccion:String, codigo_postal:int, localidad:String, provincia:String, telefono_fijo:int, telefono_movil:int, fax:int, actividad:String
+Nave: codigo_nave:String(PK), poligono:String, calle:String, numero:int, localidad:String, codigo_postal:int, provincia:String, telefono:int, caracteristicas:String, foto:blob, datos_escrituras:String, alquilada:boolean, gastos_comunidad:double
+Alquila: cif/nif:String(PK), codigo_nave:String(PK, FK), numero_de_cuenta:String, dias_de_pago:int, fecha_alguiler:int, importe_alquiler:double
+Recibo: numero_recibo:int(PK), importe_total:double, importe_IVA:double, pagado:boolean, fecha:int, cif/nif:String(FK)

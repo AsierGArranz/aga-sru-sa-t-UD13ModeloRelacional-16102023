@@ -1,0 +1,10 @@
+Piso: puerta:String(PK),dni:String, nombre:String, apellidos:String, direccion:String, codigo_postal:int, localidad:String, provincia:String, telefono:int
+Cargo: codigo_cargo:String(PK), nombre:String, funciones:String
+Ostenta: puerta_piso:String(PK,FK), codigo_cargo:String(PK,FK), fecha_posesion:int
+Anotacion: codigo_anotacion:String(PK), fecha:int, importe:double
+Gasto_variable: codigo_anotacion:String(PK,FK), fecha_factura:int, concepto:String, num_factura:int
+Tipo_gasto_fijo: codigo_tipo_gasto:String(PK), nombre:String, descripcion:String
+Gasto_fijo: codigo_anotacion:String(PK,FK), fecha_inicio:int, fecha_fin:int, consumo:double, codigo_tipo_gasto:String(FK)
+Ingreso_extra: codigo_anotacion:String(PK,FK), concepto:String
+Ingreso_recibo: codigo_anotacion:String(PK,FK), mes:int, pagado:boolean, puerta_piso:String(FK)
+Detalle_recibo: numero_linea(PK), concepto:String, importe:dounble, codigo_ingreso_recibo:String(FK)

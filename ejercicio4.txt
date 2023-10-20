@@ -1,0 +1,10 @@
+Parque_bomberos: codigo_parque:int(PK), nombre:String, direccion:String, telefono:int, categoria:String
+Coche: num_coche:int(PK), marca:String, modelo:String, numero_matricula:String, fecha_compra:int, fecha_ult_rev:int, codigo_parque:int(FK),
+Bombero: codigo_bombero:int(PK), nombre:String, apellidos:String, fecha_nac:int, dni:String, direccion:String, telefono:int, codigo_parque:int(FK),
+Turno:codigo_turno:int(PK), descripcion:String
+Periodo: fecha_inicio(PK), fecha_fin(PK)
+Trabaja_en:codigo_bombero:int(PK,FK), codigo_turno:int(PK,FK), periodo(PK,FK)
+Equipo: codigo_equipo:int(PK), nombre:String
+Forma_parte_de: codigo_bombero:int(PK,FK), puesto:String, codigo_equipo:int(KF)
+Peticion_de_servivio:codigo_pet_serv:int(PK), tipo_serv:String, grado_urgencia:int, codigo_equipo:int(FK)
+Recibe: codigo_bombero:int(PK,FK), codigo_pet_serv:int(PK,FK), fecha:int, hora:int
